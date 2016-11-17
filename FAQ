@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+ No Doubt - FAQ
+-------------------------------------------------------------------------------
+
+ Frequently Asked Questions
+ --------------------------
+
+ 1) What is this program for?
+
+ In short, No Doubt is a stupid and lame webserver.  For more information, read
+ the README.
+
+ 2) Why does it suck so badly?
+
+ No Doubt sucks so much because I made it in half a day.  I'm not a very good
+ programmer.  I'm not David Anderson.  That jerk.
+
+ 3) Is is secure?
+
+ It is only slightly more secure than Windows.
+
+ 4) How do I get better performance?
+
+ Get a better computer with a better network connection.  It's true.  That's
+ what Dave would say.  Well, I guess you can mess around with the chunk size
+ (-c) and timeout (-t) options.  A higher chunk size seems to be the best way
+ to increase throughput.  Also, if you totally disable logging (just remove the
+ printf statements), that can increase performance as well.
+
+ UPDATE (2005-07-03): I added a new flag (-v) so you can set what verbosity
+ level (i.e. how much logging) you want to take place.  Pretty snazzy.  If you
+ don't want any sort of logging, then don't pass a log file argument.  Reducing
+ the verbosity can affect the performance of the system, but it shouldn't be
+ that big of a deal.  Errors, of course, are always printed to stderr.
+
+ 5) Will you continue development of this?
+
+ Probably not, unless someone emails me and tells me I'm cool and how this
+ program has changed their life.
+
+ UPDATE (2005-07-03): I'm bored and don't want to work on the project I'm paid
+ to do (can't talk about that... NDA).  Also, I tend to get amused by simple
+ things like my program hosting web pages, so until I get tired of this (like a
+ week), I'll keep on working on No Doubt.  Maybe I'll even put it in the Open
+ Source Graveyard (i.e. Source Forge) and let it bit rot there when I lose my
+ interest.
+
+ 6) I like the idea of a small webserver like No Doubt.  Are there any other
+ projects (i.e good ones)?
+
+ For real select(2) based servers, written by smart people, look for tinyhttpd,
+ or lighttpd.  The latter has become really popular as of late and includes
+ many advanced features.  I didn't use any code from those projects or even use
+ them because I'm too stupid and lazy to bother.  I just half-assed my own
+ server (WTF?). Exactly.
+
+ 7) How does No Doubt compare to other webservers?
+
+ For the most part, No Doubt is as fast and responsive as other servers, if not
+ faster.  The only things that distinguish it are: 
+ 
+ -  It readily supports files larger than 2GB
+ -  It has a very small memory footprint and uses very little CPU
+ -  Is readable and very simple (i.e. you can learn some basic things)
+ -  It is NOT meant for commercial/enterprise work (only for small activities)
+
+ 8) Who's David Anderson?
+
+ The best programmer I know.  That jerk.
+
+-------------------------------------------------------------------------------
+

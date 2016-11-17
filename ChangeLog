@@ -1,0 +1,125 @@
+-------------------------------------------------------------------------------
+ No Doubt - ChangeLog
+-------------------------------------------------------------------------------
+ 
+ 2005-01-23
+ ----------
+
+ *  Added rudimentary session timeouts.
+ *  Added dynamic file size units.
+ *  Cleaned up directory output.
+ 
+ 2005-01-17
+ ----------
+
+ *  Fixed bug where directory output didn't produce correct HTTP headers.
+
+ 2005-11-26
+ ----------
+
+ *  Logs each connection time and date.
+ *  Log DNS information for each connection
+ *  Updated stats-hosts.sh to use DNS information.
+
+ 2005-11-22
+ ----------
+
+ *  Works with GCC 4.0.  Hott.
+ 
+ 2005-11-21
+ ----------
+
+ *  Small statistics generator.
+ *  More mime-types (wav, aac, etc.).
+
+ 2005-10-31
+ ----------
+
+ *  Does NOT work with GCC 4.0 on Ubuntu.  Dunno what's wrong.  Select?
+ 
+ 2005-10-11
+ ----------
+
+ *  Added postscript mime-type.
+ *  Added request file name logging.
+ *  Directory listing now has file sizes
+ 
+ 2005-10-03
+ ----------
+
+ *  Added IP address logging.
+ *  Makefile will generated architecture dependent executable.
+ *  Log file now appends, rather than truncates.
+ 
+ 2005-09-07
+ ----------
+
+ *  Append @ after a symbolic link.
+
+ 2005-08-27
+ ----------
+
+ *  Added text/css mime-type.
+ *  Display leading / with paths.
+ *  http_trans_dir now uses scandir(3) to provide a sorted list.
+
+ 2005-08-10
+ ----------
+
+ *  Updated quote in README.
+
+ 2005-07-20
+ ----------
+
+ *  Added copyright information to each source file.
+
+ 2005-07-08
+ ----------
+
+ *  New Makefile with better packaging
+ *  Modified license to protect contributors
+
+ 2005-07-07
+ ----------
+
+ *  Renamed ssn_create to ssn_init, to match convention
+
+ 2005-07-06
+ ----------
+
+ *  Now using STDBOOL as specified in C99
+ *  Removed unecessary function calls and clearing of FD Sets
+ *  Stressed tested with 4 concurrent streams (100 MB payloads)
+ *  Changed default chunk size
+
+ 2005-07-05
+ ----------
+
+ *  Fixed deep directory listing (depth > 2)
+ *  Switched to European dating format
+ *  Fixed problem with URLs of files and folders with spaces (fugly)
+
+ 2005-07-04
+ ----------
+
+ *  We now have a rudimentary MIME-type handler.
+ *  Changed Timeout to be in seconds, rather than microseconds
+ *  Changed Makefile, so 2gb+ files are now supported on Linux
+ *  Changed Header file, so program compiles on Linux with no warnings
+ *  Added signal handler to deallocate memory (NO MORE MEMORY LEAKS!)
+ *  Use global buffer instead of mallocing all the time
+ *  Added package target to Makefile to automatically generate package
+ *  Added automatic directory listing (OMFG IM SO ON FIRE)
+
+ 2005-07-03 
+ ----------
+ 
+ *  Broke big functions into smaller functions.  Goal is to have functions
+ viewable without scrolling (80x54 Terminal).
+
+ 2005-07-02
+ ----------
+
+ *  Initial Release to InterWeb.  Buggy, insecure, but working.
+
+-------------------------------------------------------------------------------

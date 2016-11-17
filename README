@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+ No Doubt - README
+-------------------------------------------------------------------------------
+
+ "What we hate, we make; There's no time for hating." 
+    - Rocket Summer, Calendar Days, What We Hate, We Make
+
+ Introduction
+ ------------
+
+ No Doubt is a small, inefficient, insecure, and lame webserver that is
+ designed to do only one thing:
+
+			SERVE BIG ASS FILES (ie. > 2 GB)
+
+ Any other features that this poor excuse of a webserver might have is simply
+ the cherry on top of a fugly cupcake (WTF?).  Exactly. 
+
+ One nice feature (probably the only one) is that because it uses select(2)
+ instead of pthreads, it is very fast and lightweight.  On top of this, the
+ source code is meant to be as readable as possible and whenever a decision
+ about choosing between efficiency and readability comes up, readability will
+ always win out.  If anything, this source is a pretty decent jumping off point
+ to learn about using select(2) or making a web server.  You have to be on
+ crack to use this in a production environment.  Like me.
+
+ SERIOUS NOTE: This webserver is really, really, really, REALLY INSECURE. It
+ will allow people to access any files the specified directory (including any
+ subfolders).  Although I did try to put in some security checks, I am lazy and
+ didn't try that hard.  If you get pwn3d, don't say I didn't warn you.
+
+ Install
+ -------
+
+ You will need a decent Unix operating system like NetBSD or Arch Linux. Untar
+ the tarball and then compile with make.  You can then put the executable
+ anywhere in your path (i.e /usr/local/bin).
+
+ Example:
+
+ > tar -xzvf nodoubt-0.0.1.tar.gz
+ > make
+ > sudo cp nodoubt /usr/local/bin
+
+ Usage
+ -----
+ 
+ Usage: nodoubt [options...] 
+
+ In order for the program to know what files it should be serving, you can pass
+ it a directory option (-d).  Otherwise, the program will default to the
+ current directory.
+
+ Example:
+
+ > ./nodoubt -d /pub/video
+
+ For a complete list of command line arguments, simply pass the -h flag.
+
+ Dedication
+ ----------
+
+ This program is dedicated to my friend David Anderson.  Although I don't
+ support your ripping of DVDs, I will aid your "liberation" effort so I can
+ watch some of them (WTF?).  Exactly.
+
+-------------------------------------------------------------------------------
